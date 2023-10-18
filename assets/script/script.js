@@ -1,0 +1,1 @@
+console.log('Made by SeuSite ( https://seusite.vercel.app ) 2023');

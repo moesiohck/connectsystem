@@ -1,0 +1,601 @@
+@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";@import"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";::-webkit-scrollbar-thumb {
+    display: none
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+html,body,* {
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: "Poppins";
+    margin: 0;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    letter-spacing: .5px;
+    resize: none;
+    outline: none;
+    border: 0;
+    color: #111;
+    scroll-behavior: smooth
+}
+
+html,body {
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2vw;
+    height: 10vh;
+    width: 100vw
+}
+
+header h1 {
+    font-size: 1.6vw;
+    color: #fff
+}
+
+header h1 span {
+    color: #3f80e2
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 38vw;
+    padding: 1vh 1vw
+}
+
+header nav a {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,0)
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #3f80e2
+}
+
+header nav .contato {
+    padding: .8vh 1.4vw;
+    background-color: #3f80e2;
+    border-bottom: none;
+    border: 2px solid #3f80e2;
+    border-radius: .35vw;
+    font-weight: 600;
+    backdrop-filter: blur(5px);
+    color: #fff
+}
+
+header nav .contato:hover {
+    background-color: rgba(0,0,0,0);
+    color: #3f80e2
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../img/fundo4.png");
+    background-position: center;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    gap: 1.6vh
+}
+
+main h1 {
+    font-size: 2.6vw;
+    letter-spacing: .1vw;
+    color: #f1f1f1
+}
+
+main h1 span {
+    color: #3f80e2
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 500;
+    color: #f1f1f1;
+    width: 50vw
+}
+
+main a {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #fff;
+    padding: 1.4vh 2.6vw;
+    background-color: #3f80e2;
+    border-radius: .5vw;
+    border: 2px solid #3f80e2;
+    backdrop-filter: blur(5px);
+    animation: btn1 2s ease-in-out infinite
+}
+
+@keyframes btn1 {
+    0% {
+        filter: none
+    }
+
+    50% {
+        filter: drop-shadow(0 0 10px rgba(0, 102, 255, 0.5))
+    }
+
+    100% {
+        filter: none
+    }
+}
+
+main a:hover {
+    background-color: rgba(0,0,0,0);
+    color: #3f80e2
+}
+
+main a:active {
+    font-size: 1.24vw
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff
+}
+
+#about .about-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 85vw;
+    height: 45vh;
+    overflow: hidden
+}
+
+#about .about-card .card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 90%;
+    gap: 1vh
+}
+
+#about .about-card .card-text h1 {
+    font-size: 2.8vw;
+    width: 80%
+}
+
+#about .about-card .card-text p {
+    font-size: 1.2vw;
+    padding: 0 .8vw;
+    color: #777
+}
+
+#about .about-card .card-text a {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #fff;
+    padding: 1.4vh 1.2vw;
+    background-color: #3f80e2;
+    border-radius: 5px
+}
+
+#about .about-card img {
+    height: 40vh
+}
+
+#refs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff
+}
+
+#refs .ref-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+#refs .ref-text h1 {
+    font-size: 2.2vw;
+    font-weight: 800
+}
+
+#refs .ref-text h2 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #7a7a7a
+}
+
+#refs .clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    height: 60vh;
+    border-radius: .5vw
+}
+
+#refs .clients .client-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95%;
+    width: 32%;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+    border-radius: .5vw;
+    background-color: #dadde2
+}
+
+#refs .clients .client-container .client-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    height: 40%;
+    width: 100%
+}
+
+#refs .clients .client-container .client-header h1 {
+    font-size: 2vw;
+    font-weight: 600
+}
+
+#refs .clients .client-container .client-header h2 {
+    font-size: 1vw
+}
+
+#refs .clients .client-container .client-header img {
+    height: 8vw;
+    border-radius: 1000px
+}
+
+#refs .clients .client-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    height: 40%;
+    width: 90%;
+    font-size: 1.1vw;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+#refs .clients .client-container:hover {
+    margin-bottom: 3vh;
+    background-color: #3f80e2;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.3))
+}
+
+#faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    padding: 5vh 0
+}
+
+#faq .faq-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+#faq .faq-text h1 {
+    font-size: 2.2vw;
+    font-weight: 800
+}
+
+#faq .faq-text h2 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #7a7a7a
+}
+
+#faq details {
+    height: auto;
+    width: 70vw;
+    background-color: #fff;
+    border-radius: .3vw;
+    overflow: hidden
+}
+
+#faq details summary {
+    cursor: pointer;
+    background-color: #3f80e2;
+    font-size: 1.2vw;
+    font-weight: 600;
+    padding: 2vh 1vw;
+    color: #fff
+}
+
+#faq details p {
+    padding: 2vh 2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #4e4e4e;
+    background-color: #eaeaea
+}
+
+#faq details p a {
+    font-weight: 400;
+    color: #3f80e2;
+    text-decoration: underline
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw
+}
+
+footer a {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #7a7a7a
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height:5vh;
+        padding: 0 5vw
+    }
+
+    header h1 {
+        font-size: 3vw
+    }
+
+    header nav {
+        height: auto;
+        min-width: 65vw
+    }
+
+    header nav a {
+        font-size: 2vw
+    }
+
+    header nav .contato {
+        padding: .4vh 1.2vw
+    }
+
+    main {
+        height: 50vh;
+        background-size: 150% 100%
+    }
+
+    main h1 {
+        font-size: 4vw
+    }
+
+    main h2 {
+        font-size: 3vw;
+        width: 90%
+    }
+
+    main a {
+        font-size: 2.6vw;
+        padding: 1vh 2vw
+    }
+
+    #about {
+        height: 50vh
+    }
+
+    #about .about-card {
+        height: 35vh;
+        width: 95vw
+    }
+
+    #about .about-card .card-text h1 {
+        font-size: 2vh;
+        width: 100%
+    }
+
+    #about .about-card .card-text p {
+        font-size: 1vh;
+        width: 100%
+    }
+
+    #about .about-card .card-text a {
+        font-size: 1.2vh;
+        padding: 1vh 2.6vw
+    }
+
+    #about .about-card img {
+        height: 11vh
+    }
+
+    #refs {
+        height: 50vh
+    }
+
+    #refs .ref-text h1 {
+        font-size: 2vh
+    }
+
+    #refs .ref-text h2 {
+        font-size: 1.2vh
+    }
+
+    #refs .clients {
+        height: 30vh
+    }
+
+    #refs .clients .client-container .client-header img {
+        height: 6vh
+    }
+
+    #refs .clients .client-container .client-header h1 {
+        font-size: 1.6vh
+    }
+
+    #refs .clients .client-container p {
+        font-size: 1vh
+    }
+
+    #faq {
+        min-height: 50vh
+    }
+
+    #faq .faq-text h1 {
+        font-size: 2vh
+    }
+
+    #faq .faq-text h2 {
+        font-size: 1.2vh
+    }
+
+    #faq details {
+        width: 90vw;
+        border-radius: .6vh
+    }
+
+    #faq details summary {
+        font-size: 1.4vh;
+        padding: 1.4vh
+    }
+
+    #faq details p {
+        font-size: 1.2vh
+    }
+
+    footer a {
+        font-size: 1vh
+    }
+}
+.icons-social-media {
+    align-items: center;
+    margin-top: 5px;
+    padding: 6px;
+    width: 30px;
+    cursor: pointer !important;
+    transition: 300ms all ease-in-out;
+    position: relative;
+  }
+  
+  .icons-social-media:hover {
+    translate: -0px -10px;
+  }
+  
+  #instagram,
+      #youtube,#twitch {
+    transition: 300ms all ease-in-out;
+    clip-path: circle(65%);
+  }
+  
+  #instagram:hover {
+    background-color: rgb(221, 157, 189);
+  }
+  
+  #youtube {
+    height: 35px;
+  }
+  
+  #youtube:hover {
+    background-color: rgb(241, 96, 96);
+  }
+  
+  #Icon-github:hover {
+    background-color: rgb(100, 100, 100);
+  }
+  .cssbuttons-io-button {
+    background: #3f80e2;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #3f80e2;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #3f80e2;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #3f80e2;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
+/*# sourceMappingURL=style.css.map */
