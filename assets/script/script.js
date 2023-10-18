@@ -1,1 +1,1 @@
-console.log('Made by SeuSite ( https://seusite.vercel.app ) 2023');
+console.log('Developer Moesio HCK ( https://connectsystem.moesiohck.repl.co/ ) 2023');
